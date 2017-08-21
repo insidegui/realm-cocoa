@@ -13,6 +13,11 @@ x.x.x Release notes (yyyy-MM-dd)
 
 * Fix more cases where assigning an RLMArray property to itself would clear the
   RLMArray.
+* The keychain item name used by Realm to manage the encryption keys for
+  sync-related metadata is now set to a per-app name based on the bundle
+  identifier. Keys that were previously stored within the single, shared Realm
+  keychain item will be transparently migrated to the per-application keychain
+  item.
 
 2.10.0 Release notes (2017-08-21)
 =============================================================
